@@ -49,7 +49,7 @@
       color: var(--text-main);
       line-height: 1.6;
       font-size: 16px;
-      padding-bottom: 95px; /* Spacing for permanent sticky buy bar */
+      padding-bottom: 95px; /* Spacing for sticky buy bar */
       overflow-x: hidden;
     }
 
@@ -87,7 +87,7 @@
       letter-spacing: 1px;
     }
 
-    /* Marquee Banner */
+    /* Marquee Ticker */
     .marquee-wrapper {
       background: var(--brand-green);
       color: #ffffff;
@@ -117,7 +117,7 @@
       100% { transform: translateX(-50%); }
     }
 
-    /* Site Header */
+    /* Header */
     header.site-header {
       background: var(--bg-white);
       border-bottom: 1px solid var(--border-color);
@@ -201,7 +201,7 @@
       box-shadow: 0 4px 12px rgba(37,211,102,0.25);
     }
 
-    /* Mobile Hamburger Menu Toggle */
+    /* Mobile Hamburger Menu */
     .mobile-menu-btn {
       display: none;
       background: #f0fdf4;
@@ -315,7 +315,7 @@
       line-height: 1.35;
     }
 
-    /* HERO SECTION */
+    /* HERO SECTION - CLEAN SINGLE FEATURED PRODUCT SHOWCASE */
     .hero-section {
       background: radial-gradient(circle at 80% 20%, #eff7ee 0%, #ffffff 70%);
       padding: 30px 0 40px;
@@ -369,81 +369,34 @@
       box-shadow: var(--shadow-sm);
     }
 
-    /* Product Gallery (7 Images) */
-    .hero-gallery-card {
+    /* Clean Hero Featured Product Container */
+    .hero-featured-card {
       background: white;
       border-radius: var(--radius-lg);
-      padding: 18px;
+      padding: 20px;
       box-shadow: var(--shadow-md);
       border: 1px solid var(--border-color);
       margin-bottom: 25px;
+      text-align: center;
     }
-    .main-img-container {
+    .hero-featured-img-wrap {
       width: 100%;
-      height: 360px;
-      background: #fafafa;
-      border-radius: var(--radius-md);
-      overflow: hidden;
+      max-height: 380px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 14px;
-      position: relative;
-      cursor: pointer;
-    }
-    .main-img-container img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-    .main-img-container:hover img {
-      transform: scale(1.03);
-    }
-    .zoom-hint-badge {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      background: rgba(15,51,25,0.75);
-      color: white;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      backdrop-filter: blur(4px);
-    }
-    .thumbs-flex {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 4px 2px 8px;
-      -webkit-overflow-scrolling: touch;
-    }
-    .thumb-btn {
-      width: 68px;
-      height: 68px;
-      border-radius: var(--radius-sm);
-      border: 2px solid transparent;
       overflow: hidden;
-      cursor: pointer;
-      flex-shrink: 0;
-      background: #f3f4f6;
-      transition: all 0.2s;
+      border-radius: var(--radius-md);
+      background: #fdfdfd;
+      padding: 10px;
     }
-    .thumb-btn.active {
-      border-color: var(--brand-green-dark);
-      box-shadow: 0 0 0 3px rgba(59,124,25,0.25);
-    }
-    .thumb-btn img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .hero-featured-img-wrap img {
+      max-width: 100%;
+      max-height: 360px;
+      object-fit: contain;
     }
 
-    /* Hero Pricing Card */
+    /* Hero Price Card */
     .hero-price-card {
       background: var(--gold-bg);
       border: 2px dashed var(--brand-gold);
@@ -623,7 +576,7 @@
       color: var(--text-main);
     }
 
-    /* Product Details & Packaging Box Card */
+    /* Product Packaging Details Showcase */
     .pkg-showcase-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -875,7 +828,7 @@
       margin-bottom: 6px;
     }
 
-    /* Sheet Status Banner inside Form */
+    /* Sheet Status Badge */
     .sheet-status-badge {
       display: inline-flex;
       align-items: center;
@@ -1211,7 +1164,7 @@
       transform: translateY(-2px);
     }
 
-    /* PERMANENT MOBILE & DESKTOP STICKY BUY NOW BAR */
+    /* PERMANENT STICKY BUY NOW BAR */
     .sticky-buy-bar {
       position: fixed;
       bottom: 0;
@@ -1359,7 +1312,6 @@
       .course-options-grid, .pay-options-grid, .pkg-showcase-grid { grid-template-columns: 1fr; }
       .hero-h1 { font-size: 1.55rem; }
       .section-title { font-size: 1.5rem; }
-      .main-img-container { height: 280px; }
       .stats-counter-grid { grid-template-columns: 1fr; gap: 16px; }
     }
   </style>
@@ -1384,7 +1336,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="#hero" class="logo-container">
-        <img src="assets/logo/Final_Logo_1440.avif" alt="Premexa Logo" class="logo-img" onerror="this.style.display='none'">
+        <img src="assets/logo/logo.avif" alt="Premexa Logo" class="logo-img" onerror="this.style.display='none'">
         <div class="logo-text-box">
           <span class="logo-title">Premexa</span>
           <span class="logo-subtitle">Natural by Nature, Perfected by Science</span>
@@ -1427,7 +1379,7 @@
     </ul>
   </div>
 
-  <!-- 1. HERO SECTION -->
+  <!-- 1. HERO SECTION (Clean Featured Product Presentation) -->
   <section class="hero-section" id="hero">
     <div class="container">
       <div class="rating-badge-row">
@@ -1445,34 +1397,10 @@
         <div class="hero-badge-pill">🚚 ફ્રી હોમ ડિલિવરી</div>
       </div>
 
-      <!-- 7 Product Photos Gallery (Fix broken image) -->
-      <div class="hero-gallery-card">
-        <div class="main-img-container" onclick="openLightbox(document.getElementById('main-product-img').src, 'Premexa HIGH B12 Product Box')">
-          <img id="main-product-img" src="assets/product/HIGH01.png" alt="Premexa HIGH B12 Powder Box">
-          <span class="zoom-hint-badge">🔍 મોટી ઇમેજ જોવા ક્લિક કરો</span>
-        </div>
-        <div class="thumbs-flex">
-          <div class="thumb-btn active" onclick="switchProductImg('assets/product/HIGH01.png', this)">
-            <img src="assets/product/HIGH01.png" alt="Product Pack 1">
-          </div>
-          <div class="thumb-btn" onclick="switchProductImg('assets/product/HIGH02.png', this)">
-            <img src="assets/product/HIGH02.png" alt="Product Pack 2">
-          </div>
-          <div class="thumb-btn" onclick="switchProductImg('assets/product/HIGH03.png', this)">
-            <img src="assets/product/HIGH03.png" alt="Product Pack 3">
-          </div>
-          <div class="thumb-btn" onclick="switchProductImg('assets/product/HIGH B12 03.png', this)">
-            <img src="assets/product/HIGH B12 03.png" alt="Product Pack 4">
-          </div>
-          <div class="thumb-btn" onclick="switchProductImg('assets/product/8906190740073_f.png', this)">
-            <img src="assets/product/8906190740073_f.png" alt="Box Front View">
-          </div>
-          <div class="thumb-btn" onclick="switchProductImg('assets/product/8906190740073_b.png', this)">
-            <img src="assets/product/8906190740073_b.png" alt="Box Back View - Ingredients">
-          </div>
-          <div class="thumb-btn" onclick="switchProductImg('assets/product/8906190740073_ean.png', this)">
-            <img src="assets/product/8906190740073_ean.png" alt="Box Side View - EAN Details">
-          </div>
+      <!-- Clean Featured Product Showcase (No broken thumbnails selector) -->
+      <div class="hero-featured-card">
+        <div class="hero-featured-img-wrap" onclick="openLightbox('assets/product/high01.png', 'Premexa HIGH B12 Box')">
+          <img id="main-product-img" src="assets/product/high01.png" alt="Premexa HIGH B12 Powder Box">
         </div>
       </div>
 
@@ -1592,16 +1520,16 @@
         </div>
       </div>
 
-      <!-- Packaging & Quality Showcase (Replaces missing poster image) -->
+      <!-- Product Packaging Details Showcase -->
       <div class="pkg-showcase-grid">
         <div class="pkg-info-card">
           <h4>📦 ઓરિજિનલ પેકેજિંગ વિગતો (Box Front View)</h4>
-          <img src="assets/product/8906190740073_f.png" alt="Premexa Front Box" class="pkg-img-preview" onclick="openLightbox(this.src, 'Premexa HIGH B12 Front Box')">
+          <img src="assets/product/product_front.png" alt="Premexa Front Box" class="pkg-img-preview" onclick="openLightbox(this.src, 'Premexa HIGH B12 Front Box')">
           <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px;">૧૦૦% શુદ્ધ, આયુર્વેદિક અને FSSAI દ્વારા પ્રમાણિત</p>
         </div>
         <div class="pkg-info-card">
           <h4>📋 પોષક તત્ત્વો અને ઘટકોનું લીસ્ટ (Nutritional Info & Back Box)</h4>
-          <img src="assets/product/8906190740073_b.png" alt="Premexa Back Box Info" class="pkg-img-preview" onclick="openLightbox(this.src, 'Premexa HIGH B12 Nutritional Information')">
+          <img src="assets/product/product_back.png" alt="Premexa Back Box Info" class="pkg-img-preview" onclick="openLightbox(this.src, 'Premexa HIGH B12 Nutritional Information')">
           <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px;">🔍 મોટી ઇમેજ જોવા માટે ક્લિક કરો</p>
         </div>
       </div>
@@ -1636,85 +1564,69 @@
       <div class="carousel-wrap" id="carousel-wrap-el">
         <button class="carousel-arrow-btn prev" onclick="moveSlide(-1)" title="Previous Review">❮</button>
         <div class="carousel-track" id="review-slides">
-          <!-- Slide 1 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-15 at 14.44.38.jpeg', 'ગ્રાહક પ્રતિભાવ ૧')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_01.jpeg', 'ગ્રાહક પ્રતિભાવ ૧')">
             <span class="carousel-slide-badge">૧ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-15 at 14.44.38.jpeg" alt="Customer Review 1">
+            <img src="assets/reviews/review_01.jpeg" alt="Customer Review 1">
           </div>
-          <!-- Slide 2 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-15 at 14.44.39 (1).jpeg', 'ગ્રાહક પ્રતિભાવ ૨')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_02.jpeg', 'ગ્રાહક પ્રતિભાવ ૨')">
             <span class="carousel-slide-badge">૨ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-15 at 14.44.39 (1).jpeg" alt="Customer Review 2">
+            <img src="assets/reviews/review_02.jpeg" alt="Customer Review 2">
           </div>
-          <!-- Slide 3 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-15 at 14.44.39.jpeg', 'ગ્રાહક પ્રતિભાવ ૩')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_03.jpeg', 'ગ્રાહક પ્રતિભાવ ૩')">
             <span class="carousel-slide-badge">૩ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-15 at 14.44.39.jpeg" alt="Customer Review 3">
+            <img src="assets/reviews/review_03.jpeg" alt="Customer Review 3">
           </div>
-          <!-- Slide 4 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-15 at 14.44.40.jpeg', 'ગ્રાહક પ્રતિભાવ ૪')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_04.jpeg', 'ગ્રાહક પ્રતિભાવ ૪')">
             <span class="carousel-slide-badge">૪ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-15 at 14.44.40.jpeg" alt="Customer Review 4">
+            <img src="assets/reviews/review_04.jpeg" alt="Customer Review 4">
           </div>
-          <!-- Slide 5 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.49.23.jpeg', 'ગ્રાહક પ્રતિભાવ ૫')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_05.jpeg', 'ગ્રાહક પ્રતિભાવ ૫')">
             <span class="carousel-slide-badge">૫ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.49.23.jpeg" alt="Customer Review 5">
+            <img src="assets/reviews/review_05.jpeg" alt="Customer Review 5">
           </div>
-          <!-- Slide 6 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.50.29.jpeg', 'ગ્રાહક પ્રતિભાવ ૬')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_06.jpeg', 'ગ્રાહક પ્રતિભાવ ૬')">
             <span class="carousel-slide-badge">૬ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.50.29.jpeg" alt="Customer Review 6">
+            <img src="assets/reviews/review_06.jpeg" alt="Customer Review 6">
           </div>
-          <!-- Slide 7 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.51.45.jpeg', 'ગ્રાહક પ્રતિભાવ ૭')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_07.jpeg', 'ગ્રાહક પ્રતિભાવ ૭')">
             <span class="carousel-slide-badge">૭ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.51.45.jpeg" alt="Customer Review 7">
+            <img src="assets/reviews/review_07.jpeg" alt="Customer Review 7">
           </div>
-          <!-- Slide 8 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.52.09.jpeg', 'ગ્રાહક પ્રતિભાવ ૮')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_08.jpeg', 'ગ્રાહક પ્રતિભાવ ૮')">
             <span class="carousel-slide-badge">૮ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.52.09.jpeg" alt="Customer Review 8">
+            <img src="assets/reviews/review_08.jpeg" alt="Customer Review 8">
           </div>
-          <!-- Slide 9 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.52.38.jpeg', 'ગ્રાહક પ્રતિભાવ ૯')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_09.jpeg', 'ગ્રાહક પ્રતિભાવ ૯')">
             <span class="carousel-slide-badge">૯ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.52.38.jpeg" alt="Customer Review 9">
+            <img src="assets/reviews/review_09.jpeg" alt="Customer Review 9">
           </div>
-          <!-- Slide 10 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.53.13.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૦')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_10.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૦')">
             <span class="carousel-slide-badge">૧૦ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.53.13.jpeg" alt="Customer Review 10">
+            <img src="assets/reviews/review_10.jpeg" alt="Customer Review 10">
           </div>
-          <!-- Slide 11 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.54.00.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૧')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_11.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૧')">
             <span class="carousel-slide-badge">૧૧ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.54.00.jpeg" alt="Customer Review 11">
+            <img src="assets/reviews/review_11.jpeg" alt="Customer Review 11">
           </div>
-          <!-- Slide 12 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.54.33.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૨')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_12.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૨')">
             <span class="carousel-slide-badge">૧૨ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.54.33.jpeg" alt="Customer Review 12">
+            <img src="assets/reviews/review_12.jpeg" alt="Customer Review 12">
           </div>
-          <!-- Slide 13 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.55.50.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૩')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_13.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૩')">
             <span class="carousel-slide-badge">૧૩ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.55.50.jpeg" alt="Customer Review 13">
+            <img src="assets/reviews/review_13.jpeg" alt="Customer Review 13">
           </div>
-          <!-- Slide 14 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.56.23.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૪')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_14.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૪')">
             <span class="carousel-slide-badge">૧૪ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.56.23.jpeg" alt="Customer Review 14">
+            <img src="assets/reviews/review_14.jpeg" alt="Customer Review 14">
           </div>
-          <!-- Slide 15 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 17.58.00.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૫')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_15.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૫')">
             <span class="carousel-slide-badge">૧૫ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 17.58.00.jpeg" alt="Customer Review 15">
+            <img src="assets/reviews/review_15.jpeg" alt="Customer Review 15">
           </div>
-          <!-- Slide 16 -->
-          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/WhatsApp Image 2026-08-21 at 18.06.02.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૬')">
+          <div class="carousel-slide-item" onclick="openLightbox('assets/reviews/review_16.jpeg', 'ગ્રાહક પ્રતિભાવ ૧૬')">
             <span class="carousel-slide-badge">૧૬ / ૧૬ • ગ્રાહક રિવ્યુ (🔍 ક્લિક કરો)</span>
-            <img src="assets/reviews/WhatsApp Image 2026-08-21 at 18.06.02.jpeg" alt="Customer Review 16">
+            <img src="assets/reviews/review_16.jpeg" alt="Customer Review 16">
           </div>
         </div>
         <button class="carousel-arrow-btn next" onclick="moveSlide(1)" title="Next Review">❯</button>
@@ -1728,8 +1640,8 @@
         <div class="video-card-box">
           <h3>▶️ લાઈવ અનુભવ વીડિયો - ૧</h3>
           <div class="video-wrapper-inner">
-            <video controls poster="assets/product/HIGH01.png" preload="metadata">
-              <source src="assets/reviews/WhatsApp Video 2025-05-31 at 21.45.10_e5bb103c.mp4" type="video/mp4">
+            <video controls poster="assets/product/high01.png" preload="metadata">
+              <source src="assets/reviews/review_video_2.mp4" type="video/mp4">
               તમારું બ્રાઉઝર વીડિયો પ્લેબેક સપોર્ટ કરતું નથી.
             </video>
           </div>
@@ -1738,8 +1650,8 @@
         <div class="video-card-box">
           <h3>▶️ લાઈવ અનુભવ વીડિયો - ૨</h3>
           <div class="video-wrapper-inner">
-            <video controls poster="assets/product/HIGH02.png" preload="metadata">
-              <source src="assets/reviews/DJI_20250904_161707_271_null_video-compressed (1).mp4" type="video/mp4">
+            <video controls poster="assets/product/high02.png" preload="metadata">
+              <source src="assets/reviews/review_video_1.mp4" type="video/mp4">
               તમારું બ્રાઉઝર વીડિયો પ્લેબેક સપોર્ટ કરતું નથી.
             </video>
           </div>
@@ -1939,7 +1851,7 @@
             <div class="fssai-lic-tag">લાયસન્સ નંબર : 10721999000097</div>
             <p style="font-size:0.9rem;color:var(--brand-green-dark);font-weight:700;">✓ FSSAI દ્વારા માન્યતા પ્રાપ્ત ૧૦૦% સેફ ફૂડ સપ્લિમેન્ટ</p>
           </div>
-          <img src="assets/licence/WhatsApp Image 2026-08-24 at 21.13.02.jpeg" alt="FSSAI Certificate Premexa" class="fssai-cert-img" onclick="openLightbox(this.src, 'Premexa FSSAI Certificate')">
+          <img src="assets/licence/fssai_licence.jpeg" alt="FSSAI Certificate Premexa" class="fssai-cert-img" onclick="openLightbox(this.src, 'Premexa FSSAI Certificate')">
         </div>
       </div>
     </div>
@@ -2051,20 +1963,17 @@
 
   <!-- JavaScript -->
   <script>
-    // Configured Google Sheet Web App URL
     let GOOGLE_SHEET_SCRIPT_URL = localStorage.getItem('premexa_sheet_url') || ""; 
 
     let currentCourse = 3;
     let currentPayment = 'online';
     let currentSlide = 0;
-    let autoSlideTimer = null;
 
     const basePrices = {
       1: { mrp: 899, offer: 599 },
       3: { mrp: 2499, offer: 1500 }
     };
 
-    // Countdown Timer logic
     function startCountdown() {
       let duration = 599; // 9 min 59 sec
       const display = document.getElementById('countdown-timer');
@@ -2076,7 +1985,6 @@
       }, 1000);
     }
 
-    // Mobile Drawer Navigation Toggle
     function toggleMobileDrawer() {
       const drawer = document.getElementById('mobile-drawer');
       const backdrop = document.getElementById('drawer-backdrop');
@@ -2084,14 +1992,6 @@
       backdrop.classList.toggle('active');
     }
 
-    // Switch Main Product Gallery Photo
-    function switchProductImg(src, elem) {
-      document.getElementById('main-product-img').src = src;
-      document.querySelectorAll('.thumb-btn').forEach(t => t.classList.remove('active'));
-      elem.classList.add('active');
-    }
-
-    // Select Course Option
     function selectCourse(duration) {
       currentCourse = duration;
       document.querySelectorAll('.course-card').forEach(c => c.classList.remove('selected'));
@@ -2100,7 +2000,6 @@
       updatePriceSummary();
     }
 
-    // Select Payment Option
     function selectPayment(mode) {
       currentPayment = mode;
       document.querySelectorAll('.pay-card-box').forEach(c => c.classList.remove('selected'));
@@ -2109,7 +2008,6 @@
       updatePriceSummary();
     }
 
-    // Update Pricing Breakdown Summary
     function updatePriceSummary() {
       const courseObj = basePrices[currentCourse];
       const basePrice = courseObj.offer;
@@ -2131,7 +2029,6 @@
       document.getElementById('sticky-was').textContent = '₹' + courseObj.mrp;
     }
 
-    // Review Photo Carousel Init & Controls
     function initCarousel() {
       const slidesContainer = document.getElementById('review-slides');
       const slides = slidesContainer.querySelectorAll('.carousel-slide-item');
@@ -2145,7 +2042,6 @@
         dotsContainer.appendChild(dot);
       });
 
-      // Touch swipe support for mobile
       let touchStartX = 0;
       let touchEndX = 0;
       const wrap = document.getElementById('carousel-wrap-el');
@@ -2156,13 +2052,9 @@
 
       wrap.addEventListener('touchend', e => {
         touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-      }, { passive: true });
-
-      function handleSwipe() {
         if (touchEndX < touchStartX - 40) moveSlide(1);
         if (touchEndX > touchStartX + 40) moveSlide(-1);
-      }
+      }, { passive: true });
     }
 
     function moveSlide(direction) {
@@ -2183,7 +2075,6 @@
       });
     }
 
-    // Lightbox Functionality
     function openLightbox(src, caption) {
       document.getElementById('lightbox-img-el').src = src;
       document.getElementById('lightbox-caption-el').textContent = caption || '';
@@ -2200,7 +2091,6 @@
       document.getElementById('lightbox-modal').classList.remove('active');
     }
 
-    // Google Sheet Setup Modal
     function updateSheetBadge() {
       const icon = document.getElementById('sheet-badge-icon');
       const text = document.getElementById('sheet-badge-text');
@@ -2235,7 +2125,6 @@
       alert('Google Sheet Web App URL સફળતાપૂર્વક સેવ થઈ ગઈ છે!');
     }
 
-    // Form Submission & Order Processing
     function handleOrderSubmit(e) {
       e.preventDefault();
       
@@ -2261,19 +2150,16 @@
         total: `₹${finalAmount}`
       };
 
-      // Set Loading state
       submitBtn.disabled = true;
       btnIcon.textContent = "⏳";
       btnText.textContent = "ઓર્ડર પ્રોસેસ થઈ રહ્યો છે...";
 
-      // Save locally as backup
       try {
         const savedOrders = JSON.parse(localStorage.getItem('premexa_orders') || '[]');
         savedOrders.push(orderData);
         localStorage.setItem('premexa_orders', JSON.stringify(savedOrders));
       } catch (err) {}
 
-      // Submit to Google Sheets if configured
       if (GOOGLE_SHEET_SCRIPT_URL && GOOGLE_SHEET_SCRIPT_URL.trim() !== "") {
         fetch(GOOGLE_SHEET_SCRIPT_URL, {
           method: 'POST',
@@ -2286,12 +2172,10 @@
       }
 
       setTimeout(() => {
-        // Reset submit button state
         submitBtn.disabled = false;
         btnIcon.textContent = "✅";
         btnText.textContent = "ઓર્ડર કન્ફર્મ કરો ( Confirm Order )";
 
-        // Show Modal Summary
         const summaryHTML = `
           <p style="margin-bottom:6px;"><strong>નામ:</strong> ${name}</p>
           <p style="margin-bottom:6px;"><strong>મોબાઈલ:</strong> ${phone}</p>
@@ -2303,7 +2187,6 @@
 
         document.getElementById('modal-summary').innerHTML = summaryHTML;
 
-        // WhatsApp Confirmation Link Generator
         const waMsg = `Hi Premexa, I have placed an order:%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ACourse: ${encodeURIComponent(orderData.course)}%0APayment: ${encodeURIComponent(orderData.payment)}%0ATotal: ₹${finalAmount}%0AAddress: ${encodeURIComponent(address)}`;
         document.getElementById('wa-confirm-btn').href = `https://wa.me/917778006375?text=${waMsg}`;
 
