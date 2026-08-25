@@ -1,0 +1,73 @@
+{
+  "products": [
+    {
+      "id": "premexa-b12",
+      "name": "Premexa HIGH B12 પાવડર",
+      "title": "Premexa HIGH B12 પાવડર | વનસ્પતિ આધારિત ફૂડ સપ્લિમેન્ટ પાવડર",
+      "subtitle": "વિટામિન B12 અને મિનરલ્સની ઉણપ દૂર કરવા માટે ૧૫+ કુદરતી હર્બલ પાવડરનું અનોખું મિશ્રણ",
+      "license": "10721999000097",
+      "contact": {
+        "phones": ["7778006375", "8733006375"],
+        "email": "info@premexa.in",
+        "companyAddress": "39-40, Dwarkesh Industrial Estate, Umra, Surat - 394130",
+        "officeAddress": "B-139, Royal Plaza, Simada, Surat - 395006",
+        "social": {
+          "instagram": "https://instagram.com/premexa.in",
+          "facebook": "https://facebook.com/premexa.in",
+          "youtube": "https://youtube.com/@premexa"
+        }
+      },
+      "plans": [
+        {
+          "months": 1,
+          "name": "1 મહિના નો કોર્સ",
+          "mrp": 899,
+          "price": 599,
+          "popular": false,
+          "packets": 30,
+          "savings": 300
+        },
+        {
+          "months": 3,
+          "name": "3 મહિના નો કોર્સ",
+          "mrp": 2499,
+          "price": 1500,
+          "popular": true,
+          "packets": 90,
+          "savings": 999
+        }
+      ],
+      "symptoms": [
+        "હાથ-પગમાં સુનકાર / ખાલી ચડવી.",
+        "શરીરમાં કમજોરી લાગવી.",
+        "પગમાં દુખાવો રહેતો હોય.",
+        "કામ કરવા મન ન લાગવું / થાક લાગવો.",
+        "યાદશક્તિ ઓછી થવી.",
+        "કારણ વગર ટેન્શન અથવા ચીડિયાપણું.",
+        "નખ, વાળ અથવા ચામડી સંબંધિત સમસ્યા."
+      ],
+      "ingredients": [
+        {"name": "સ્પિરૂલિના", "english": "Spirulina", "desc": "વિટામિન B12 અને આયર્ન નો નેચરલ સ્ત્રોત"},
+        {"name": "બીટ રૂટ", "english": "Beet Root", "desc": "હિમોગ્લોબિન અને સ્ટેમિના વધારવામાં મદદરૂપ"},
+        {"name": "આમળા", "english": "Amla", "desc": "કુદરતી વિટામિન C અને ઈમ્યુનિટી બૂસ્ટર"},
+        {"name": "દરિયાઈ વનસ્પતિ", "english": "Sea Kelp / Algae", "desc": "મલ્ટી-મિનરલ્સ અને આયોડિન"},
+        {"name": "પાલક", "english": "Spinach", "desc": "ફોલેટ, કેલ્શિયમ અને ફાઇબર"},
+        {"name": "સરગવો", "english": "Moringa", "desc": "સુપરફૂડ: એન્ટીઓક્સિડન્ટ્સ અને એમિનો એસિડ્સ"},
+        {"name": "જાંબુ", "english": "Jamun", "desc": "બ્લડ શુગર અને પાચન સપોર્ટ"},
+        {"name": "આલ્ફા આલ્ફા", "english": "Alfalfa", "desc": "વિટામિન્સ K, C, E અને ખનિજો"},
+        {"name": "લીંબુ", "english": "Lemon", "desc": "કુદરતી ડિટોક્સ અને સાઇટ્રસ બૂસ્ટ"}
+      ],
+      "dosage": {
+        "packetsPerBox": 30,
+        "packetWeight": "5g",
+        "timing": "રોજ સવારે ભૂખ્યા પેટે (૧૫ મિનિટ પહેલા)",
+        "method": "એક પેકેટ એક ગ્લાસ નોર્મલ પાણી માં મિક્સ કરી ને લેવાનું રહેશે."
+      },
+      "stats": {
+        "usersCount": "10,000+",
+        "successRate": "85%",
+        "rating": "4.9/5"
+      }
+    }
+  ]
+}
